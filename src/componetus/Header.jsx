@@ -21,21 +21,7 @@ function Header(){
 				<li className=""><Link to="/Login" ><IoLogIn className="w-10 h-10" /></Link></li>
 			</ul>
 		</nav>
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
-			
+
 		</header>
 		</>
 	)

@@ -9,7 +9,7 @@ import { use } from "react";
 
 
 const BouncingDots = () => (
-	<span class="loader"></span>
+	<span className="loader"></span>
   );
 
 function Main() {
