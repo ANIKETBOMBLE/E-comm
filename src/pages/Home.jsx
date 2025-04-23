@@ -27,9 +27,14 @@ function Main() {
  }{
 	return (
 		<>
-		
-		  <h1>Home</h1>
-		  
+			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+				<Product />
+			</div>
+			<div className="flex justify-center mt-4">
+				<button className="bg-blue-500 text-white px-4 py-2 rounded">
+					Load More
+				</button>
+			</div>
 		  
 		</>
 	  );

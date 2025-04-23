@@ -39,6 +39,26 @@ import React from 'react'
 1
 export default function Products() {
   return (
-	<div>Products</div>
+	<>
+<div className="">
+		<h1 className="text-3xl font-bold text-center my-10">Products</h1>
+		<div className="flex flex-wrap justify-center">
+			{/* Product 1 */}
+			<div className="product w-[23%] h-72 p-2 my-6 relative bg-white rounded-2xl drop-shadow-2xl">
+				<img
+					className="w-full h-1/2 object-contain"
+					src="https://via.placeholder.com/"					alt="Product 1"
+				/>
+				<div className="h-1/2">
+					<h3>Product 1</h3>
+					<p className="font-bold text-2xl absolute w-full left-4 bottom-4">$19.99</p>
+				</div>
+			</div>
+
+			{/* Add more products here */}
+			
+		</div>
+</div>
+	</>
   )
 }

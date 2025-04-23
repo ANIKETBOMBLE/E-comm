@@ -2,8 +2,8 @@
 	transform: rotateZ(45deg);
 	perspective: 1000px;
 	border-radius: 50%;
-	width: 88px;
-	height: 68px;
+	width: 108px;
+	height: 108px;
 	color: #fff;
   }
 	.loader:before,
@@ -22,7 +22,7 @@
 	.loader:after {
 	  color: #000000;
 	  transform: rotateY(70deg);
-	  animation-delay: .7s;
+	  animation-delay: .15s;
 	}
 
   @keyframes rotate {
