@@ -1,33 +1,43 @@
-import React, { use }  from "react";
-import instance from "./axios";
+import instance from "./axios.js";
+import { useState, useEffect } from "react";
+// import Product from "../Product.jsx";
+import Product from "./Products.jsx";
+import { use } from "react";
 
+
+
+
+
+const BouncingDots = () => (
+	<span class="loader"></span>
+  );
 
 function Main() {
-	const [products, setProducts] = useState([]);
-	const [loading, setLoading] = useState(true);
-  
-	useEffect(() => {
-	  getData();
-	}, []);
-  
-	async function getData() {
-	  setLoading(true);
-	  const result = await instance.get("/products");
-	  // console.log(result.data.products);
-	  setProducts(result.data.products);
-	  setLoading(false);
+	const [loading , setloading] = useState(true);
+
+	useEffect(()=>{
+	setTimeout(() => {
+	setloading(false);	
+	}, 1000);
+	})
+	
+
+ if(loading){
+	return <BouncingDots/>
+ }{
+	return (
+		<>
+		
+		  <h1>Home</h1>
+		  
+		  
+		</>
+	  );
 	}
 	
-	
-	
-	
-	
-	return(
-		<>
-		<h2>home</h2>
-		
-		</>
-	)
-}
+ }
 
-export default Home;
+
+
+
+export default Main;

@@ -11,6 +11,7 @@ import Cart from './pages/Cart'
 import Singleprod from './pages/Singleprod'
 import NotFound from './pages/NotFound'
 import CartProvider from './pages/CartProvider'
+import './App.css';
 
 const  router = createBrowserRouter([
   {

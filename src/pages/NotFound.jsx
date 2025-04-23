@@ -1,10 +1,11 @@
-import React from 'react'
+import { Link } from "react-router-dom";
 
-export default function NotFound() {
+function NotFound() {
   return (
-	<div>NotFound
-		
-		usernot NotFound
-	</div>
-  )
+    <h1 className="font-bold text-3xl">
+      Nothing to show here. Go to <Link to="/">Home</Link>
+    </h1>
+  );
 }
+
+export default NotFound;
