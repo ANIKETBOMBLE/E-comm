@@ -12,6 +12,7 @@ import Singleprod from './pages/Singleprod'
 import NotFound from './pages/NotFound'
 import CartProvider from './pages/CartProvider'
 import './App.css';
+import Product from './pages/Product'
 
 const  router = createBrowserRouter([
   {
@@ -44,6 +45,11 @@ const  router = createBrowserRouter([
         path:"/CarProvider",
         element: <CartProvider/>
       },{
+        path : "/product/:id" ,
+        element: <Product />
+      }
+      ,
+      {
         path:"*",
         element:<NotFound/>
       },
